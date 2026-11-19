@@ -1,0 +1,9 @@
+untuk i dalam rentang(1, 16):
+    kalau i % 15 == 0:
+        cetak("FizzBuzz")
+    atau_kalau i % 3 == 0:
+        cetak("Fizz")
+    atau_kalau i % 5 == 0:
+        cetak("Buzz")
+    lainnya:
+        cetak(i)
