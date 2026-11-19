@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "indopy"
+version = "0.1.0"
+description = "IndoPython - Python versi Indonesia"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "AdityaDevID" }]
+keywords = ["indonesia", "python", "bahasa pemrograman", "transpiler"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Indonesian",
+]
+
+[project.urls]
+Homepage = "https://github.com/AdityaDevID/indopython"
+Issues = "https://github.com/AdityaDevID/indopython/issues"
+
+[project.scripts]
+idpy = "indopy.cli:main"
+indopy = "indopy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
