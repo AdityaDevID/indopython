@@ -1,0 +1,40 @@
+# Contoh IndoPython
+fungsi sapa(nama):
+    kalau nama == "Raden":
+        cetak("Halo bos!")
+    lainnya:
+        cetak(f"Halo, {nama}")
+
+untuk i dalam rentang(3):
+    sapa("Dunia")
+
+sapa("Raden")
+
+kelas Hewan:
+    fungsi __init__(self, nama):
+        self.nama = nama
+
+    fungsi bersuara(self):
+        kembalikan "..."
+
+kelas Kucing(Hewan):
+    fungsi bersuara(self):
+        kembalikan "Meong"
+
+k = Kucing("Mimi")
+cetak(k.nama, "bilang", k.bersuara())
+
+angka_list = [x * 2 untuk x dalam rentang(5) kalau x % 2 == 0]
+cetak("Hasil:", angka_list, "total:", jumlah(angka_list))
+
+coba:
+    x = 1 / 0
+kecuali ZeroDivisionError sebagai e:
+    cetak("Error:", e)
+akhirnya:
+    cetak("Selesai, ini 'untuk' di string nggak diganti")
+
+n = 3
+selama n > 0:
+    cetak("hitung mundur", n)
+    n -= 1

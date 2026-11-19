@@ -1,0 +1,5 @@
+nama = masukan("Siapa namamu? ")
+kalau nama:
+    cetak(f"Halo, {nama}! Selamat datang di IndoPython 🇮🇩")
+lainnya:
+    cetak("Halo, orang misterius!")
